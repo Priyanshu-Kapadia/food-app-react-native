@@ -7,10 +7,11 @@ import {
 
 import { FONTS } from "../constants";
 
-const Header = ({containerStyle, title, leftComponent, rightComponent}) => {
+const Header = ({containerStyle, title, titleStyle, leftComponent, rightComponent}) => {
     return (
         <View
             style={{
+                height: 60,
                 flexDirection: 'row',
                 ...containerStyle
             }}
@@ -28,7 +29,8 @@ const Header = ({containerStyle, title, leftComponent, rightComponent}) => {
             >
             <Text
                 style={{
-                    ...FONTS.h3
+                    ...FONTS.h3,
+                    ...titleStyle
                 }}
             >
                 {title}

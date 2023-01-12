@@ -27,7 +27,7 @@ const HorizontalFoodCard = ({ containerStyle, imageStyle, item, onPress }) => {
         <Text style={{ ...FONTS.h3, fontSize: 17 }}>{item.name}</Text>
 
         {/* description */}
-        <Text style={{ color: COLORS.darkGray2, ...FONTS.body4 }}>
+        <Text numberOfLines={1} style={{ color: COLORS.darkGray2, ...FONTS.body4, marginRight: SIZES.base }}>
           {item.description}
         </Text>
 

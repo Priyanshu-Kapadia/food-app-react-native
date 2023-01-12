@@ -77,7 +77,7 @@ const VerticalFoodCard = ({ containerStyle, item, onPress }) => {
             }}
         >
             <Text style={{...FONTS.h3}}>{item.name}</Text>
-            <Text style={{ color: COLORS.darkGray2, textAlign: 'center', ...FONTS.body5}}>
+            <Text numberOfLines={1} style={{ color: COLORS.darkGray2, textAlign: 'center', ...FONTS.body5, marginHorizontal: SIZES.base}}>
                 {item.description}
             </Text>
             <Text style={{marginTop: SIZES.radius, ...FONTS.h2}}>

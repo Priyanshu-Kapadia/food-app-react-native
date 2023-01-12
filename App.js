@@ -64,7 +64,7 @@ const App = () => {
             screenOptions={{
               headerShown: false,
             }}
-            initialRouteName={"OnBoarding"}
+            initialRouteName={"Home"}
           >
             <Stack.Screen name="Home" component={CustomDrawer} />
             <Stack.Screen

@@ -274,7 +274,7 @@ const MainLayout = ({ navigation, selectedTab, setSelectedTab }) => {
       {/* Header */}
       <Header
         containerStyle={{
-          height: 50,
+          height: 60,
           paddingHorizontal: SIZES.padding,
           marginTop: 40,
           alignItems: "center",
@@ -340,11 +340,11 @@ const MainLayout = ({ navigation, selectedTab, setSelectedTab }) => {
                   width: SIZES.width
                 }}
               >
-                {item.label === constants.screens.home && <Home />}
-                {item.label === constants.screens.search && <Search />}
-                {item.label === constants.screens.cart && <MyCart />}
-                {item.label === constants.screens.favourite && <Favourite />}
-                {item.label === constants.screens.notification && <Notification />}                
+                {item.label === constants.screens.home && <Home navigation={navigation}/>}
+                {item.label === constants.screens.search && <Search navigation={navigation}/>}
+                {item.label === constants.screens.cart && <MyCart navigation={navigation}/>}
+                {item.label === constants.screens.favourite && <Favourite navigation={navigation}/>}
+                {item.label === constants.screens.notification && <Notification navigation={navigation}/>}                
               </View>
             )
           }}
