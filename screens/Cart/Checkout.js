@@ -1,21 +1,21 @@
 import React from 'react';
 import {
     View,
-    Text
+    Text,
 } from 'react-native';
 
-const CartTab = () => {
+const Checkout = ({ navigation, route }) => {
+
     return (
         <View
             style={{
                 flex: 1,
-                alignItems: 'center',
-                justifyContent: 'center'
+                backgroundColor: COLORS.white
             }}
         >
-            <Text>Cart</Text>
+            <Text>Checkout</Text>
         </View>
     )
 }
 
-export default CartTab
+export default Checkout;

@@ -19,7 +19,7 @@ import Animated, {
 import { connect } from "react-redux";
 import { setSelectedTab } from "../stores/tab/tabActions";
 
-import { Home, Search, CartTab, Favourite, Notification } from "../screens";
+import { Home, Search, MyCart, Favourite, Notification } from "../screens";
 
 import {
   COLORS,
@@ -342,7 +342,7 @@ const MainLayout = ({ navigation, selectedTab, setSelectedTab }) => {
               >
                 {item.label === constants.screens.home && <Home />}
                 {item.label === constants.screens.search && <Search />}
-                {item.label === constants.screens.cart && <CartTab />}
+                {item.label === constants.screens.cart && <MyCart />}
                 {item.label === constants.screens.favourite && <Favourite />}
                 {item.label === constants.screens.notification && <Notification />}                
               </View>

@@ -14,4 +14,3 @@ export {
     icons,
     dummyData,
 }
-
