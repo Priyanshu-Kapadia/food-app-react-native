@@ -9,6 +9,9 @@ import FormInput from "./FormInput";
 import CustomSwitch from "./CustomSwitch";
 import CardQuantityButton from "./CardQuantityButton";
 import IconLabel from "./IconLabel";
+import LineDivider from './LineDivider'
+import Rating from './Rating'
+import StepperInput from "./StepperInput";
 
 export {
     Header,
@@ -21,5 +24,8 @@ export {
     FormInput,
     CustomSwitch,
     CardQuantityButton,
-    IconLabel
+    IconLabel,
+    LineDivider,
+    Rating,
+    StepperInput
 }

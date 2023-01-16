@@ -4,7 +4,8 @@ import {
     Text,
     ImageBackground,
     Image,
-    Animated
+    Animated,
+    Dimensions
 } from 'react-native';
 
 import { constants, images, FONTS, SIZES, COLORS } from "../../constants"
@@ -12,6 +13,22 @@ import { constants, images, FONTS, SIZES, COLORS } from "../../constants"
 import { TextButton } from '../../components'
 
 const OnBoarding = ({ navigation }) => {
+    var topData = 0;
+    var widthImage = 0;
+    var heightImage = 0;
+    var ImageBottomMargin = 0;
+
+    if (Dimensions.get("window").width >= 768) {
+        topData = SIZES.height > 800 ? 50 : 25
+        widthImage = SIZES.width * 0.5
+        heightImage = SIZES.width * 0.5
+        ImageBottomMargin = SIZES.padding * 2
+      } else {
+        topData = SIZES.height > 800 ? 50 : 25
+        widthImage = SIZES.width * 0.8
+        heightImage = SIZES.width * 0.8
+        ImageBottomMargin = -SIZES.padding
+      }
 
     const scrollX = useRef(new Animated.Value(0)).current;
     const flatListRef = useRef()
@@ -21,6 +38,7 @@ const OnBoarding = ({ navigation }) => {
     const onViewChangeRef = useRef(({ viewableItems, changed }) => {
         setCurrentIndex(viewableItems[0].index)
     })
+
     const Dots = () => {
         const dotPostion = Animated.divide(scrollX, SIZES.width)
         return (
@@ -68,7 +86,7 @@ const OnBoarding = ({ navigation }) => {
             <View
                 style={{
                     position: 'absolute',
-                    top: SIZES.height > 800 ? 50 : 25,
+                    top: topData,
                     left: 0,
                     right: 0,
                     alignItems: 'center',
@@ -206,7 +224,7 @@ const OnBoarding = ({ navigation }) => {
                                         flex: 1,
                                         alignItems: 'center',
                                         justifyContent: 'flex-end',
-                                        height: index == 1 ? '96%' : '100%',
+                                        height: Dimensions.get("window").width >= 768 ? index == 1 ? '80%' : '80%' : index == 1 ? '96%' : '100%',
                                         width: '100%'
                                     }}
                                 >
@@ -214,9 +232,9 @@ const OnBoarding = ({ navigation }) => {
                                         source={item.bannerImage}
                                         resizeMode='contain'
                                         style={{
-                                            width: SIZES.width * 0.8,
-                                            height: SIZES.width * 0.8,
-                                            marginBottom: -SIZES.padding
+                                            width: widthImage,
+                                            height: heightImage,
+                                            marginBottom: ImageBottomMargin
                                         }}
                                     />
                                 </ImageBackground>
