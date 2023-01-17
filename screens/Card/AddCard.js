@@ -3,7 +3,8 @@ import {
     View,
     Text,
     Image,
-    ImageBackground
+    ImageBackground,
+    Dimensions
 } from 'react-native';
 
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
@@ -33,6 +34,14 @@ const AddCard = ({ navigation, route }) => {
 
         setSelectedCard(selectedCard)
     }, [])
+
+    // iPad and Mobile responsive
+    var CardWidth = 0;
+    if (Dimensions.get("window").width >= 768) {
+        CardWidth = 350;
+    } else {
+        CardWidth = 200;
+    }
 
     function isEnableAddCard() {
         return cardNumber != "" && cardName != "" && expiryDate != "" && cvv != "" && cardNumberError == "" && cardNameError == "" && expiryDateError == "" && cvvError == ""
@@ -83,7 +92,7 @@ const AddCard = ({ navigation, route }) => {
             <ImageBackground
                 source={images.card}
                 style={{
-                    height: 200,
+                    height: CardWidth,
                     width: "100%",
                     marginTop: SIZES.radius,
                     borderRadius: SIZES.radius,
