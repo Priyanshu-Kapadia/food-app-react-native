@@ -6,6 +6,7 @@ const FormInput = ({
     containerStyle,
     label,
     placeholder,
+    inputContainerStyle,
     inputStyle,
     prependComponent,
     appendComponent,
@@ -56,7 +57,8 @@ const FormInput = ({
             paddingHorizontal: SIZES.padding,
             marginTop: SIZES.base,
             borderRadius: SIZES.radius,
-            backgroundColor: COLORS.lightGray2
+            backgroundColor: COLORS.lightGray2,
+            ...inputContainerStyle
         }}
       >
         {prependComponent}

@@ -309,7 +309,7 @@ const AddCard = ({ navigation, route }) => {
 
             {/* Body */}
             <KeyboardAwareScrollView
-                keyboardDismissMode='on-drag'
+                keyboardDismissMode="on-drag"
                 contentContainerStyle={{
                     flexGrow: 1,
                     paddingHorizontal: SIZES.padding

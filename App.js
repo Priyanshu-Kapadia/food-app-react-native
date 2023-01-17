@@ -107,9 +107,11 @@ const App = () => {
               component={MyCart}
             />
 
+            {/* Do Not Go Back For IOS Devices - Options*/}
             <Stack.Screen
               name="Success"
               component={Success}
+              options={{gestureEnabled: false}}
             />
 
             <Stack.Screen
@@ -122,9 +124,11 @@ const App = () => {
               component={MyCard}
             />
 
+            {/* Do Not Go Back For IOS Devices - Options */}
             <Stack.Screen
               name="DeliveryStatus"
               component={DeliveryStatus}
+              options={{gestureEnabled: false}}
             />
 
             <Stack.Screen
