@@ -5,7 +5,7 @@ import {
     Image
 } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import { CardQuantityButton, IconLabel, LineDivider, Rating, StepperInput, TextButton } from '../../components';
+import { CartQuantityButton, IconLabel, LineDivider, Rating, StepperInput, TextButton } from '../../components';
 import Header from '../../components/Header';
 import IconButton from '../../components/IconButton';
 
@@ -331,7 +331,7 @@ const FoodDetail = ({ route, navigation }) => {
                     />
                 }
                 rightComponent={
-                    <CardQuantityButton
+                    <CartQuantityButton
                         qunatity={qty}
                     />
                 }

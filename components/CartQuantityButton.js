@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity, Image} from 'react-native'
 import React from 'react'
 
 import {FONTS, SIZES, COLORS, icons} from '../constants'
-const CardQuantityButton = ({containerStyle, iconStyle, qunatity, onPress}) => {
+const CartQuantityButton = ({containerStyle, iconStyle, qunatity, onPress}) => {
   return (
     <TouchableOpacity
         style={{
@@ -54,4 +54,4 @@ const CardQuantityButton = ({containerStyle, iconStyle, qunatity, onPress}) => {
   )
 }
 
-export default CardQuantityButton
+export default CartQuantityButton

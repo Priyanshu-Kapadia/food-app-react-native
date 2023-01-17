@@ -14,7 +14,8 @@ const FormInput = ({
     keyboardType = "default",
     autoComplete = "off",
     autoCapitalize = "none",
-    errorMsg = ""
+    errorMsg = "",
+    maxLength
 }) => {
   return (
     <View
@@ -64,6 +65,7 @@ const FormInput = ({
                 flex: 1,
                 ...inputStyle
             }}
+            maxLength={maxLength}
             placeholder={placeholder}
             placeholderTextColor={COLORS.gray}
             secureTextEntry={secureTextEntry}

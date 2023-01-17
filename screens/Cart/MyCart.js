@@ -9,8 +9,9 @@ import {
 import {
     Header,
     IconButton,
-    CardQuantityButton,
-    StepperInput
+    CartQuantityButton,
+    StepperInput,
+    FooterTotal
 } from '../../components'
 
 import { SwipeListView } from 'react-native-swipe-list-view'
@@ -28,6 +29,16 @@ const MyCart = ({ navigation }) => {
         ))
 
         setMyCartList(newMyCartList)
+    }
+
+    function removeMyCartHandler(id){
+        let newMyCartList = [...myCartList]
+
+        const index = newMyCartList.findIndex(cart => cart.id === id)
+    
+        newMyCartList.splice(index, 1);
+
+        setMyCartList(newMyCartList);
     }
 
     // Render
@@ -62,7 +73,7 @@ const MyCart = ({ navigation }) => {
                     />
                 }
                 rightComponent={
-                    <CardQuantityButton
+                    <CartQuantityButton
                         qunatity={3}
                     />
                 }
@@ -149,6 +160,21 @@ const MyCart = ({ navigation }) => {
                         />
                     </View>
                 )}
+                renderHiddenItem={(data, rowMap) => (
+                    <IconButton 
+                        containerStyle={{
+                            flex: 1,
+                            justifyContent: 'flex-end',
+                            backgroundColor: COLORS.primary,
+                            ...styles.cartItemContainer
+                        }}
+                        icon={icons.delete_icon}
+                        iconStyle={{
+                            marginRight: 10
+                        }}
+                        onPress={()=> removeMyCartHandler(data.item.id)}
+                    />
+                )}
             />
         )
     }
@@ -167,6 +193,12 @@ const MyCart = ({ navigation }) => {
             {renderCartList()}
 
             {/* Footer */}
+            <FooterTotal 
+                subTotal={37.97}
+                shippingFee={0.00}
+                total={37.97}
+                onPress={() => navigation.navigate('MyCard')}
+            />
         </View>
     )
 }
