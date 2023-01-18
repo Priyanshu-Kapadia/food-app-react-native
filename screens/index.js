@@ -34,6 +34,8 @@ import Success from "./Cart/Success"
 // Card
 import AddCard from "./Card/AddCard"
 import MyCard from "./Card/MyCard"
+import MyWallet from "./Card/MyWallet"
+import EditCard from "./Card/EditCard"
 
 // Delivery
 import DeliveryStatus from "./Delivery/DeliveryStatus"
@@ -62,6 +64,8 @@ export {
 
     AddCard,
     MyCard,
+    MyWallet,
+    EditCard,
 
     DeliveryStatus,
     Map

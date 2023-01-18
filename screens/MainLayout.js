@@ -279,7 +279,7 @@ const MainLayout = ({ navigation, selectedTab, setSelectedTab }) => {
           marginTop: 40,
           alignItems: "center",
         }}
-        title={selectedTab.toUpperCase()}
+        title={selectedTab?.toUpperCase()}
         leftComponent={
           <TouchableOpacity
             style={{

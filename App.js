@@ -38,7 +38,9 @@ import {
   Success,
   AddCard,
   DeliveryStatus,
-  Map
+  Map,
+  MyWallet,
+  EditCard
 } from './screens'
 
 LogBox.ignoreAllLogs();
@@ -111,7 +113,7 @@ const App = () => {
             <Stack.Screen
               name="Success"
               component={Success}
-              options={{gestureEnabled: false}}
+              options={{ gestureEnabled: false }}
             />
 
             <Stack.Screen
@@ -124,11 +126,21 @@ const App = () => {
               component={MyCard}
             />
 
+            <Stack.Screen
+              name="MyWallet"
+              component={MyWallet}
+            />
+
+            <Stack.Screen
+              name="EditCard"
+              component={EditCard}
+            />
+
             {/* Do Not Go Back For IOS Devices - Options */}
             <Stack.Screen
               name="DeliveryStatus"
               component={DeliveryStatus}
-              options={{gestureEnabled: false}}
+              options={{ gestureEnabled: false }}
             />
 
             <Stack.Screen
