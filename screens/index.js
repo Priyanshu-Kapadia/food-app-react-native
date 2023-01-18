@@ -41,6 +41,10 @@ import EditCard from "./Card/EditCard"
 import DeliveryStatus from "./Delivery/DeliveryStatus"
 import Map from "./Delivery/Map"
 
+//Profile
+import Profile from "./Profile/Profile";
+import EditAccount from './Profile/EditAccount';
+
 export {
     MainLayout,
     Home,
@@ -68,5 +72,8 @@ export {
     EditCard,
 
     DeliveryStatus,
-    Map
+    Map,
+
+    Profile,
+    EditAccount
 }

@@ -40,7 +40,9 @@ import {
   DeliveryStatus,
   Map,
   MyWallet,
-  EditCard
+  EditCard,
+  Profile,
+  EditAccount
 } from './screens'
 
 LogBox.ignoreAllLogs();
@@ -146,6 +148,16 @@ const App = () => {
             <Stack.Screen
               name="Map"
               component={Map}
+            />
+
+            <Stack.Screen
+              name="Profile"
+              component={Profile}
+            />
+
+            <Stack.Screen
+              name="EditAccount"
+              component={EditAccount}
             />
           </Stack.Navigator>
         </NavigationContainer>

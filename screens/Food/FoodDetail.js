@@ -289,7 +289,7 @@ const FoodDetail = ({ route, navigation }) => {
                     }}
                     label='Buy Now'
                     label2={`$ ${qty * (foodItem?.price)}`}
-                    onPress={() => navigation.navigate("MyCart")}
+                    onPress={() => navigation.navigate("MyCart", {home: false})}
                 />
             </View>
         )

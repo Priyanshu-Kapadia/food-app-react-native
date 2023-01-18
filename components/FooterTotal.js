@@ -7,11 +7,9 @@ import {FONTS, SIZES, COLORS} from '../constants'
 
 import {LinearGradient} from 'expo-linear-gradient'
 
-const FooterTotal = ({subTotal, shippingFee, total, onPress}) => {
+const FooterTotal = ({subTotal, shippingFee, total, onPress, home=false}) => {
   return (
-    <View
-    
-    >
+    <View>
         {/* Shadow */}
         <LinearGradient 
             start={{x:0, y:0}}
@@ -33,7 +31,8 @@ const FooterTotal = ({subTotal, shippingFee, total, onPress}) => {
                 padding: SIZES.padding,
                 borderTopLeftRadius: 20,
                 borderTopRightRadius: 20,
-                backgroundColor: COLORS.white
+                backgroundColor: COLORS.white,
+                marginBottom: home ? SIZES.padding * 6.5 : 0
             }}
         >
             {/* SubTotal */}

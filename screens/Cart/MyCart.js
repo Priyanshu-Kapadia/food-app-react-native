@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     View,
     Text,
@@ -18,8 +18,16 @@ import { SwipeListView } from 'react-native-swipe-list-view'
 
 import {FONTS, SIZES, COLORS, dummyData, icons} from '../../constants'
 
-const MyCart = ({ navigation }) => {
+const MyCart = ({ navigation, route }) => {
 
+    const [home, setHome] = useState(null)
+
+    useEffect(() => {
+        let { home } = route.params
+
+        setHome(home)
+    }, [])
+    
     const [myCartList, setMyCartList] = useState(dummyData.myCart);
 
     // Handler
@@ -187,7 +195,7 @@ const MyCart = ({ navigation }) => {
             }}
         >
             {/* Header */}
-            {renderHeader()}
+            {!home && renderHeader()}
 
             {/* Cart List */}
             {renderCartList()}
@@ -198,6 +206,7 @@ const MyCart = ({ navigation }) => {
                 shippingFee={0.00}
                 total={37.97}
                 onPress={() => navigation.navigate('MyCard')}
+                home={home ? true : false}
             />
         </View>
     )

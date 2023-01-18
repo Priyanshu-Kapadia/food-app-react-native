@@ -303,6 +303,7 @@ const MainLayout = ({ navigation, selectedTab, setSelectedTab }) => {
               alignItems: "center",
               justifyContent: "center",
             }}
+            onPress={()=>navigation.navigate('Profile')}
           >
             <Image
               source={dummyData?.myProfile?.profile_image}
@@ -342,7 +343,7 @@ const MainLayout = ({ navigation, selectedTab, setSelectedTab }) => {
               >
                 {item.label === constants.screens.home && <Home navigation={navigation}/>}
                 {item.label === constants.screens.search && <Search navigation={navigation}/>}
-                {item.label === constants.screens.cart && <MyCart navigation={navigation}/>}
+                {item.label === constants.screens.cart && <MyCart navigation={navigation} route={{params: {home: true}}}/>}
                 {item.label === constants.screens.favourite && <Favourite navigation={navigation}/>}
                 {item.label === constants.screens.notification && <Notification navigation={navigation}/>}                
               </View>
