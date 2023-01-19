@@ -1,4 +1,4 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 
 import { Header, IconButton, IconLabel, Rating, TextButton, TextIconButton } from '../../components'
@@ -55,7 +55,7 @@ const RiderReview = ({ navigation }) => {
 
     function renderProfile() {
         return (
-            <View
+            <ScrollView
                 style={{
                     marginTop: SIZES.radius,
                 }}
@@ -207,7 +207,7 @@ const RiderReview = ({ navigation }) => {
                     </View>
 
                 </View>
-            </View>
+            </ScrollView>
         )
     }
 

@@ -32,7 +32,7 @@ const FooterTotal = ({subTotal, shippingFee, total, onPress, home=false}) => {
                 borderTopLeftRadius: 20,
                 borderTopRightRadius: 20,
                 backgroundColor: COLORS.white,
-                marginBottom: home ? SIZES.padding * 6.5 : 0
+                marginBottom: home ? SIZES.padding * 8 : 0
             }}
         >
             {/* SubTotal */}
