@@ -4,6 +4,35 @@ const myProfile = {
     address: "No. 88, Jln Padungan, Kuching"
 }
 
+const myRider = {
+    name: "Priyanshu Kapadia",
+    profile_image: require("../assets/images/profile.png"),
+    contact: "+91 1234567890",
+    rating: 4,
+    tips: [
+        {
+            id: 1,
+            label: 'No Tips'
+        },
+        {
+            id: 2,
+            label: '$5'
+        },
+        {
+            id: 3,
+            label: '$10'
+        },
+        {
+            id: 4,
+            label: '$15'
+        },
+        {
+            id: 5,
+            label: '$20'
+        }
+    ]
+}
+
 const categories = [
     {
         id: 1,
@@ -221,6 +250,7 @@ export default {
     vegBiryani,
     
     myProfile,
+    myRider,
     categories,
     menu,
     sizes,

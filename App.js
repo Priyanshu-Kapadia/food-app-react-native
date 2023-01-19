@@ -42,7 +42,9 @@ import {
   MyWallet,
   EditCard,
   Profile,
-  EditAccount
+  EditAccount,
+  RiderInfo,
+  RiderReview
 } from './screens'
 
 LogBox.ignoreAllLogs();
@@ -150,6 +152,7 @@ const App = () => {
               component={Map}
             />
 
+            {/* Profile Navigation */}
             <Stack.Screen
               name="Profile"
               component={Profile}
@@ -159,6 +162,18 @@ const App = () => {
               name="EditAccount"
               component={EditAccount}
             />
+
+            {/* Rider Navigation */}
+            <Stack.Screen
+              name="RiderInfo"
+              component={RiderInfo}
+            />
+
+            <Stack.Screen
+              name="RiderReview"
+              component={RiderReview}
+            />
+
           </Stack.Navigator>
         </NavigationContainer>
       </Provider>

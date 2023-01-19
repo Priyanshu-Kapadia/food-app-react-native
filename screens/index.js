@@ -45,6 +45,10 @@ import Map from "./Delivery/Map"
 import Profile from "./Profile/Profile";
 import EditAccount from './Profile/EditAccount';
 
+//Rider
+import RiderInfo from './Rider/RiderInfo';
+import RiderReview from './Rider/RiderReview';
+
 export {
     MainLayout,
     Home,
@@ -75,5 +79,8 @@ export {
     Map,
 
     Profile,
-    EditAccount
+    EditAccount,
+
+    RiderInfo,
+    RiderReview
 }

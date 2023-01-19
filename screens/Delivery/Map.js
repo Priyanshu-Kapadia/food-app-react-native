@@ -304,6 +304,7 @@ const Map = ({ navigation }) => {
                             justifyContent: 'center',
                             backgroundColor: COLORS.primary
                         }}
+                        onPress={()=>navigation.navigate('RiderInfo')}
                     >
                         <Image 
                             source={images.profile}

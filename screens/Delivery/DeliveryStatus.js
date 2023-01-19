@@ -19,7 +19,7 @@ const DeliveryStatus = ({ navigation }) => {
         return () => backHandler.remove();
     }, [])
 
-    const [currentStep, setCurrentStep] = useState(2)
+    const [currentStep, setCurrentStep] = useState(4)
 
     function renderHeader() {
         return (
@@ -273,7 +273,7 @@ const DeliveryStatus = ({ navigation }) => {
                             borderRadius: SIZES.base
                         }}
                         label='DONE'
-                        onPress={() => navigation.navigate('Home')}
+                        onPress={() => navigation.navigate('RiderReview')}
                     />
                 }
             </View>

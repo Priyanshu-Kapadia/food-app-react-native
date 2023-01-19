@@ -16,7 +16,9 @@ const FormInput = ({
     autoComplete = "off",
     autoCapitalize = "none",
     errorMsg = "",
-    maxLength
+    maxLength,
+    numberOfLines,
+    multiline,
 }) => {
   return (
     <View
@@ -67,6 +69,8 @@ const FormInput = ({
                 flex: 1,
                 ...inputStyle
             }}
+            numberOfLines={numberOfLines}
+            multiline={multiline}
             maxLength={maxLength}
             placeholder={placeholder}
             placeholderTextColor={COLORS.gray}
