@@ -1,7 +1,8 @@
 import { View, Text, Platform } from 'react-native'
 import React from 'react'
 
-import { TextButton, LineDivider} from '../components'
+import TextButton from '../components/TextButton'
+import LineDivider from '../components/LineDivider'
 
 import {FONTS, SIZES, COLORS} from '../constants'
 

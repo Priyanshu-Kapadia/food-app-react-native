@@ -11,7 +11,7 @@ import {
 import { HorizontalFoodCard, VerticalFoodCard } from "../../components";
 
 import { FONTS, SIZES, COLORS, icons, dummyData } from "../../constants";
-import { FilterModal } from "../";
+import { FilterModal } from "../Home/FilterModal";
 
 const Section = ({ title, onPress, children }) => {
   return (

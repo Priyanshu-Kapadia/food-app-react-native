@@ -7,7 +7,7 @@ import {
     ScrollView
 } from 'react-native';
 
-import { AuthLayout } from '../'
+import { AuthLayout } from '../Authentication/AuthLayout'
 
 import { FONTS, SIZES, COLORS, icons } from '../../constants'
 
