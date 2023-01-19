@@ -6,7 +6,7 @@ import {
     Image
 } from 'react-native';
 
-import { AuthLayout } from '../Authentication/AuthLayout';
+import AuthLayout from '../Authentication/AuthLayout';
 import { FONTS, SIZES, COLORS, icons } from '../../constants'
 import { FormInput, TextButton } from '../../components';
 import { utils } from '../../utils';
