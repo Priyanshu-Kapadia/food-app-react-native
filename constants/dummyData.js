@@ -246,9 +246,172 @@ const fromLocs = [
     }
 ]
 
+const MyOrders = [
+    {
+        id: 1,
+        name: 'Pizza Hut',
+        orderDate: '19 Sep, 2022',
+        time: '14:30',
+        // image: require("../assets/images/Pizza-Hut-Logo.png"),
+        items: [
+            {
+                id: 1,
+                name: "Hamburger",
+                description: "Chicken patty hamburger",
+                categories: [1, 2],
+                price: 15.99,
+                calories: 78,
+                isFavourite: true,
+                image: require("../assets/dummyData/hamburger.png")
+            },
+            {
+                id: 2,
+                name: "Hot Tacos",
+                description: "Mexican tortilla & tacos",
+                categories: [1, 3],
+                price: 10.99,
+                calories: 78,
+                isFavourite: false,
+                image: require("../assets/dummyData/hot_tacos.png")
+            },
+        ],
+        price: 35.30,
+        orderStatus: 'Order Delivered',
+        foodIsOnWay: false
+    },
+    {
+        id: 2,
+        name: 'KFC',
+        orderDate: '19 Sep, 2022',
+        time: '14:30',
+        // image: require("../assets/images/KFC-Logo.png"),
+        items: [
+            {
+                id: 1,
+                name: "Hamburger",
+                description: "Chicken patty hamburger",
+                categories: [1, 2],
+                price: 15.99,
+                calories: 78,
+                isFavourite: true,
+                image: require("../assets/dummyData/hamburger.png")
+            },
+            {
+                id: 4,
+                name: "Wrap Sandwich",
+                description: "Grilled vegetables sandwich",
+                categories: [1, 2],
+                price: 10.99,
+                calories: 78,
+                isFavourite: true,
+                image: require("../assets/dummyData/wrap_sandwich.png")
+            },
+        ],
+        price: 55.30,
+        orderStatus: 'Order Cancelled',
+        foodIsOnWay: false
+    },
+    {
+        id: 3,
+        name: "Burger King",
+        orderDate: '15 Sep, 2022',
+        time: '14:30',
+        // image: require("../assets/images/Burger-King-Logo.png"),
+        items: [
+            {
+                id: 1,
+                name: "Hamburger",
+                description: "Chicken patty hamburger",
+                categories: [1, 2],
+                price: 15.99,
+                calories: 78,
+                isFavourite: true,
+                image: require("../assets/dummyData/hamburger.png")
+            },
+        ],
+        price: 15.30,
+        orderStatus: 'Order Ordered',
+        foodIsOnWay: false
+    },
+    {
+        id: 4,
+        name: 'Starbucks',
+        orderDate: '23 Jan, 2022',
+        time: '14:30',
+        // image: require("../assets/images/Starbucks-Logo.png"),
+        items: [
+            {
+                id: 4,
+                name: "Wrap Sandwich",
+                description: "Grilled vegetables sandwich",
+                categories: [1, 2],
+                price: 10.99,
+                calories: 78,
+                isFavourite: true,
+                image: require("../assets/dummyData/wrap_sandwich.png")
+            },
+            {
+                id: 2,
+                name: "Hot Tacos",
+                description: "Mexican tortilla & tacos",
+                categories: [1, 3],
+                price: 10.99,
+                calories: 78,
+                isFavourite: false,
+                image: require("../assets/dummyData/hot_tacos.png")
+            }
+        ],
+        price: 90.30,
+        orderStatus: 'Food is on the way',
+        foodIsOnWay: true
+    },
+    {
+        id: 5,
+        name: 'McDonald',
+        orderDate: '23 Jan, 2023',
+        // image: require("../assets/images/McDonalds-Logo.png"),
+        time: '14:30',
+        items: [
+            {
+                id: 1,
+                name: "Hamburger",
+                description: "Chicken patty hamburger",
+                categories: [1, 2],
+                price: 15.99,
+                calories: 78,
+                isFavourite: true,
+                image: require("../assets/dummyData/hamburger.png")
+            },
+            {
+                id: 4,
+                name: "Wrap Sandwich",
+                description: "Grilled vegetables sandwich",
+                categories: [1, 2],
+                price: 10.99,
+                calories: 78,
+                isFavourite: true,
+                image: require("../assets/dummyData/wrap_sandwich.png")
+            },
+            {
+                id: 3,
+                name: "Veg Biryani",
+                description: "A popular spice and vegetables mixed favoured rice dish which is typically prepared by layering the biryani gravy and basmati rice in flat bottom vessel.",
+                categories: [1, 2, 3],
+                price: 10.99,
+                calories: 78,
+                isFavourite: true,
+                image: require("../assets/dummyData/veg_biryani.png")
+            }
+        ],
+        price: 55.30,
+        orderStatus: 'Food is on the way',
+        foodIsOnWay: true
+    }
+]
+
 export default {
     vegBiryani,
-    
+
     myProfile,
     myRider,
     categories,
@@ -258,4 +421,5 @@ export default {
     myCards,
     allCards,
     fromLocs,
+    MyOrders
 }

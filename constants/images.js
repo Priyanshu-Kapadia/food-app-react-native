@@ -8,6 +8,12 @@ const logo_01 = require("../assets/images/logo_01.png")
 const logo_02 = require("../assets/images/logo_02.png")
 const profile = require("../assets/images/profile.png")
 const success = require("../assets/images/success.png")
+const burgerKing = require("../assets/images/Burger-King-Logo.png")
+const mcDonald = require("../assets/images/McDonalds-Logo.png")
+const starBucks = require("../assets/images/Starbucks-Logo.png")
+const KFC = require("../assets/images/KFC-Logo.png")
+const pizzaHut = require("../assets/images/Pizza-Hut-Logo.png")
+
 
 export default {
     background_01,
@@ -19,5 +25,10 @@ export default {
     logo_01,
     logo_02,
     profile,
-    success
+    success,
+    burgerKing,
+    starBucks,
+    mcDonald,
+    pizzaHut,
+    KFC
 }

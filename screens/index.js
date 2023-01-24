@@ -49,6 +49,9 @@ import EditAccount from './Profile/EditAccount';
 import RiderInfo from './Rider/RiderInfo';
 import RiderReview from './Rider/RiderReview';
 
+//Order
+import MyOrder from "./Order/MyOrder";
+
 export {
     MainLayout,
     Home,
@@ -82,5 +85,6 @@ export {
     EditAccount,
 
     RiderInfo,
-    RiderReview
+    RiderReview,
+    MyOrder
 }

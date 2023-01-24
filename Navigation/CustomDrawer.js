@@ -201,7 +201,7 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
             isFocused={selectedTab === constants.screens.location}
             onPress={() => {
               setSelectedTab(constants.screens.location);
-              navigation.navigate("Location");
+              navigation.navigate("MyOrder");
             }}
           />
 
