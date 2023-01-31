@@ -252,7 +252,7 @@ const MyOrders = [
         name: 'Pizza Hut',
         orderDate: '19 Sep, 2022',
         time: '14:30',
-        // image: require("../assets/images/Pizza-Hut-Logo.png"),
+        image: require("../assets/images/Pizza-Hut-Logo.png"),
         items: [
             {
                 id: 1,
@@ -284,7 +284,7 @@ const MyOrders = [
         name: 'KFC',
         orderDate: '19 Sep, 2022',
         time: '14:30',
-        // image: require("../assets/images/KFC-Logo.png"),
+        image: require("../assets/images/KFC-Logo.png"),
         items: [
             {
                 id: 1,
@@ -316,7 +316,7 @@ const MyOrders = [
         name: "Burger King",
         orderDate: '15 Sep, 2022',
         time: '14:30',
-        // image: require("../assets/images/Burger-King-Logo.png"),
+        image: require("../assets/images/Burger-King-Logo.png"),
         items: [
             {
                 id: 1,
@@ -330,7 +330,7 @@ const MyOrders = [
             },
         ],
         price: 15.30,
-        orderStatus: 'Order Ordered',
+        orderStatus: 'Order Delivered',
         foodIsOnWay: false
     },
     {
@@ -338,7 +338,7 @@ const MyOrders = [
         name: 'Starbucks',
         orderDate: '23 Jan, 2022',
         time: '14:30',
-        // image: require("../assets/images/Starbucks-Logo.png"),
+        image: require("../assets/images/Starbucks-Logo.png"),
         items: [
             {
                 id: 4,
@@ -369,7 +369,7 @@ const MyOrders = [
         id: 5,
         name: 'McDonald',
         orderDate: '23 Jan, 2023',
-        // image: require("../assets/images/McDonalds-Logo.png"),
+        image: require("../assets/images/McDonalds-Logo.png"),
         time: '14:30',
         items: [
             {
@@ -409,6 +409,56 @@ const MyOrders = [
     }
 ]
 
+const MyCoupons = [
+    {
+        id: 1,
+        name: 'Burger King',
+        validDate: '01 Jan, 2024',
+        offer: '20% Off',
+        image: require("../assets/images/Burger-King-Logo.png"),
+        avaliable: true
+    },
+    {
+        id: 2,
+        name: 'KFC',
+        validDate: '01 Jan, 2024',
+        offer: '10% Off',
+        image: require("../assets/images/KFC-Logo.png"),
+        avaliable: true
+    },
+    {
+        id: 3,
+        name: 'Pizza Hut',
+        validDate: '01 Feb, 2024',
+        offer: '35% Off',
+        image: require("../assets/images/Pizza-Hut-Logo.png"),
+        avaliable: true
+    },
+    {
+        id: 4,
+        name: 'Starbucks',
+        validDate: '01 Feb, 2024',
+        offer: '15% Off',
+        image: require("../assets/images/Starbucks-Logo.png"),
+        avaliable: true
+    },
+    {
+        id: 5,
+        name: 'Burger King',
+        validDate: '02 Jan, 2023',
+        offer: '20% Off',
+        image: require("../assets/images/Burger-King-Logo.png"),
+        avaliable: false
+    },
+    {
+        id: 6,
+        name: 'Starbucks',
+        validDate: '01 Jan, 2023',
+        offer: '15% Off',
+        image: require("../assets/images/Starbucks-Logo.png"),
+        avaliable: false
+    },
+]
 export default {
     vegBiryani,
 
@@ -417,9 +467,14 @@ export default {
     categories,
     menu,
     sizes,
+
     myCart,
+
     myCards,
     allCards,
+    
     fromLocs,
-    MyOrders
+
+    MyOrders,
+    MyCoupons
 }

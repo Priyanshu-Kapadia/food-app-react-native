@@ -52,6 +52,9 @@ import RiderReview from './Rider/RiderReview';
 //Order
 import MyOrder from "./Order/MyOrder";
 
+//Coupon
+import MyCoupon from "./Coupon/MyCoupon";
+
 export {
     MainLayout,
     Home,
@@ -86,5 +89,7 @@ export {
 
     RiderInfo,
     RiderReview,
-    MyOrder
+    MyOrder,
+
+    MyCoupon
 }
