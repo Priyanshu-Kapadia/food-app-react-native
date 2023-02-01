@@ -99,7 +99,7 @@ const MyOrder = ({ navigation }) => {
       <View>
         {dummyData.MyOrders.map((item, index) => {
           return (
-            <View>
+            <View key={item.id}>
               {active == 'history' ? !item.foodIsOnWay &&
                 <View
                   style={{

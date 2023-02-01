@@ -99,7 +99,7 @@ const MyCoupon = ({ navigation }) => {
       <View>
         {dummyData.MyCoupons.map((item, index) => {
           return (
-            <View>
+            <View key={item.id}>
               {active == 'avaliable' ? item.avaliable && <View
               style={{
                 display: 'flex',

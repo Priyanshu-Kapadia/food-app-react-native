@@ -33,7 +33,7 @@ const screens = {
     location: "Track Your Order",
     coupons: "Coupons",
     settings: "Settings",
-    invite: "Invite a Friend",
+    invite: "Account Info",
     help: "Help Center",
     logout: "Logout"
 }

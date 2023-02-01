@@ -46,7 +46,8 @@ import {
   RiderInfo,
   RiderReview,
   MyOrder,
-  MyCoupon
+  MyCoupon,
+  MyAccount
 } from './screens'
 
 LogBox.ignoreAllLogs();
@@ -163,6 +164,11 @@ const App = () => {
             <Stack.Screen
               name="EditAccount"
               component={EditAccount}
+            />
+
+            <Stack.Screen
+              name="MyAccount"
+              component={MyAccount}
             />
 
             {/* Rider Navigation */}

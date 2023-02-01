@@ -231,7 +231,7 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
             isFocused={selectedTab === constants.screens.invite}
             onPress={() => {
               setSelectedTab(constants.screens.invite);
-              navigation.navigate("Profile");
+              navigation.navigate("MyAccount");
             }}
           />
 

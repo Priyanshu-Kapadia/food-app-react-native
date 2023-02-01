@@ -1,7 +1,13 @@
 const myProfile = {
     name: "Priyanshu Kapadia",
     profile_image: require("../assets/images/profile.png"),
-    address: "No. 88, Jln Padungan, Kuching"
+    address: "No. 88, Jln Padungan, Kuching",
+    phone_number: "111-222-3333",
+    user_id: '1111 2222',
+    dob: '03/03/1990',
+    gender: 'Male',
+    joined: 'March 2017',
+    email: 'priyanshu@gmail.com',
 }
 
 const myRider = {
