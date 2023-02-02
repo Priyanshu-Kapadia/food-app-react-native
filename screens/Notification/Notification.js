@@ -186,12 +186,29 @@ const Notification = ({ navigation, route }) => {
             <View style={{
                 marginTop: SIZES.base
             }}>
-                <Text style={{
-                    ...FONTS.body3,
-                    marginBottom: SIZES.radius
-                }}>
-                    {date}
-                </Text>
+                <View
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        flexDirection: 'row',
+                        marginBottom: SIZES.radius,
+                        justifyContent: 'space-between'
+                    }}
+                >
+                    <Text style={{
+                        ...FONTS.body3,
+                    }}>
+                        {date}
+                    </Text>
+                    <IconButton 
+                        icon={icons.delete_icon}
+                        iconStyle={{
+                            tintColor: COLORS.primary,
+                            height: 20,
+                            width: 20
+                        }}
+                    />
+                </View>
                 <View style={{
                     backgroundColor: COLORS.lightGray2,
                     borderRadius: SIZES.radius,
@@ -311,7 +328,7 @@ const Notification = ({ navigation, route }) => {
             {!home && renderNotificationSetting()}
 
             {/* Notification Tab */}
-            {home && 
+            {home &&
                 <ScrollView
                     showsVerticalScrollIndicator={false}
                 >

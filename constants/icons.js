@@ -56,6 +56,7 @@ const tc = require("../assets/icons/tc.png")
 const checkUpdate = require("../assets/icons/checkUpdate.png")
 const privacy = require("../assets/icons/privacy.png")
 const lock = require("../assets/icons/lock.png")
+const date = require("../assets/icons/date.png")
 
 
 export default {
@@ -116,5 +117,6 @@ export default {
     tc,
     checkUpdate,
     privacy,
-    lock
+    lock,
+    date
 }

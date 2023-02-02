@@ -134,7 +134,7 @@ const EditAccount = ({ navigation }) => {
               }}
             >
               <Image
-                source={icons.down_arrow}
+                source={icons.date}
                 style={{
                   height: 20,
                   width: 20,
