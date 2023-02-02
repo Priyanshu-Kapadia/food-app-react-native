@@ -27,7 +27,7 @@ const EditAccount = ({ navigation }) => {
       // for iOS, add a button that closes the picker
     }
     if (Platform.OS === 'ios') {
-      setShow(false);
+      setShow(true);
       // for iOS, add a button that closes the picker
     }
     setMode(currentMode);
