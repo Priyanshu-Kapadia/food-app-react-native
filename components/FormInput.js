@@ -20,6 +20,7 @@ const FormInput = ({
     maxLength,
     numberOfLines,
     multiline,
+    errorStyle
 }) => {
   return (
     <View
@@ -45,7 +46,8 @@ const FormInput = ({
         <Text
             style={{
                 color: COLORS.red,
-                ...FONTS.body4
+                ...FONTS.body4,
+                ...errorStyle
             }}
         >
             {errorMsg}

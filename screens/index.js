@@ -45,6 +45,7 @@ import Map from "./Delivery/Map"
 import Profile from "./Profile/Profile";
 import EditAccount from './Profile/EditAccount';
 import MyAccount from "./Profile/MyAccount";
+import ChangePassword from "./Profile/ChangePassword";
 
 //Rider
 import RiderInfo from './Rider/RiderInfo';
@@ -91,6 +92,7 @@ export {
     Profile,
     EditAccount,
     MyAccount,
+    ChangePassword,
 
     RiderInfo,
     RiderReview,

@@ -90,6 +90,7 @@ const Settings = ({ navigation }) => {
                     LineColor={{
                         backgroundColor: COLORS.lightGray1
                     }}
+                    onPress={()=>navigation.navigate('ChangePassword')}
                 />
 
                 <ContainerBox

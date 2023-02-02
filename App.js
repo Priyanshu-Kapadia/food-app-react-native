@@ -49,7 +49,8 @@ import {
   MyCoupon,
   MyAccount,
   Settings,
-  Notification
+  Notification,
+  ChangePassword
 } from './screens'
 
 LogBox.ignoreAllLogs();
@@ -171,6 +172,11 @@ const App = () => {
             <Stack.Screen
               name="MyAccount"
               component={MyAccount}
+            />
+
+            <Stack.Screen
+              name="ChangePassword"
+              component={ChangePassword}
             />
 
             {/* Rider Navigation */}
