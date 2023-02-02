@@ -51,6 +51,12 @@ const navigator = require("../assets/icons/navigator.png")
 const navigator1 = require("../assets/icons/navigator1.png")
 const location_pin1 = require("../assets/icons/location_pin1.png")
 const navigator2 = require("../assets/icons/navigator2.png")
+const dataUse = require("../assets/icons/dataUse.png")
+const tc = require("../assets/icons/tc.png")
+const checkUpdate = require("../assets/icons/checkUpdate.png")
+const privacy = require("../assets/icons/privacy.png")
+const lock = require("../assets/icons/lock.png")
+
 
 export default {
     apple,
@@ -105,5 +111,10 @@ export default {
     navigator,
     navigator1,
     location_pin1,
-    navigator2
+    navigator2,
+    dataUse,
+    tc,
+    checkUpdate,
+    privacy,
+    lock
 }

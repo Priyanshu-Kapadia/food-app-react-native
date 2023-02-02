@@ -5,6 +5,7 @@ import React from 'react'
 const FormInput = ({
     containerStyle,
     label,
+    value,
     placeholder,
     inputContainerStyle,
     inputStyle,
@@ -69,6 +70,7 @@ const FormInput = ({
                 flex: 1,
                 ...inputStyle
             }}
+            value={value}
             numberOfLines={numberOfLines}
             multiline={multiline}
             maxLength={maxLength}

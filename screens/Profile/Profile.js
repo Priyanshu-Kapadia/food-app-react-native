@@ -158,6 +158,38 @@ const Profile = ({ navigation }) => {
                                 {dummyData?.myProfile.address}
                             </Text>
                         </View>
+
+                        {/* User Phone */}
+                        <IconLabel
+                            icon={icons.call}
+                            iconStyle={{
+                                tintColor: COLORS.black
+                            }}
+                            label="Phone Number"
+                            labelStyle={{
+                                color: COLORS.black
+                            }}
+                            containerStyle={{
+                                marginTop: SIZES.radius,
+                                marginHorizontal: -10
+                            }}
+                        />
+                        <View
+                            style={{
+                                padding: SIZES.padding,
+                                backgroundColor: COLORS.lightGray2,
+                                marginTop: SIZES.base,
+                                borderRadius: SIZES.radius
+                            }}
+                        >
+                            <Text
+                                style={{
+                                    ...FONTS.h4
+                                }}
+                            >
+                                {dummyData?.myProfile.phone_number}
+                            </Text>
+                        </View>
                     </View>
                 </View>
             </ScrollView>

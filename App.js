@@ -47,7 +47,9 @@ import {
   RiderReview,
   MyOrder,
   MyCoupon,
-  MyAccount
+  MyAccount,
+  Settings,
+  Notification
 } from './screens'
 
 LogBox.ignoreAllLogs();
@@ -192,6 +194,18 @@ const App = () => {
             <Stack.Screen
               name="MyCoupon"
               component={MyCoupon}
+            />
+
+            {/* Settings Navigation */}
+            <Stack.Screen
+              name="Settings"
+              component={Settings}
+            />
+
+            {/* Notification Navigation */}
+            <Stack.Screen
+              name="Notification"
+              component={Notification}
             />
 
           </Stack.Navigator>

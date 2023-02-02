@@ -45,7 +45,6 @@ const MyAccount = ({ navigation }) => {
                 title="ACCOUNT INFO"
                 containerStyle={{
                     height: 50,
-                    marginHorizontal: SIZES.padding,
                     marginTop: 40
                 }}
                 leftComponent={

@@ -170,7 +170,7 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
             isFocused={selectedTab === constants.screens.notification}
             onPress={() => {
               setSelectedTab(constants.screens.notification);
-              navigation.navigate("Notification");
+              navigation.navigate("Notification", {home: false});
             }}
           />
 

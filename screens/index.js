@@ -56,6 +56,9 @@ import MyOrder from "./Order/MyOrder";
 //Coupon
 import MyCoupon from "./Coupon/MyCoupon";
 
+//Settings
+import Settings from "./Settings/Settings";
+
 export {
     MainLayout,
     Home,
@@ -93,5 +96,6 @@ export {
     RiderReview,
     MyOrder,
 
-    MyCoupon
+    MyCoupon,
+    Settings
 }
