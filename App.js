@@ -88,6 +88,7 @@ const App = () => {
             <Stack.Screen
               name="SignIn"
               component={SignIn}
+              options={{ gestureEnabled: false }}
             />
 
             <Stack.Screen

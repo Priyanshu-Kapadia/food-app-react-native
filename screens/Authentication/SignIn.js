@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     View,
     Text,
     TouchableOpacity,
     Image,
-    ScrollView
+    ScrollView,
+    BackHandler
 } from 'react-native';
 
 import AuthLayout from '../Authentication/AuthLayout'
@@ -16,6 +17,12 @@ import { CustomSwitch, FormInput, TextButton, TextIconButton } from '../../compo
 import { utils } from '../../utils'
 
 const SignIn = ({ navigation }) => {
+
+    // Do Not Go Back For Android Devices
+    useEffect(() => {
+        const backHandler = BackHandler.addEventListener('hardwareBackPress', () => { return true })
+        return () => backHandler.remove();
+    }, [])
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
