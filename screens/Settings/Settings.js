@@ -1,11 +1,19 @@
 import { View, Text, ScrollView } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { Header, IconButton, LineDivider, TextButton, TextIconButton } from '../../components'
 
 import { FONTS, COLORS, SIZES, icons, dummyData } from '../../constants'
 
 const Settings = ({ navigation }) => {
+
+    useEffect(() => {
+        console.log(COLORS.primary)
+        if(COLORS.primary != '#FF6C44') {
+            {COLORS.primary}
+        }
+    }, [COLORS.primary])
+    
 
     function ContainerBox({ icon, label, LineColor, onPress }) {
         return (
@@ -99,6 +107,7 @@ const Settings = ({ navigation }) => {
                     LineColor={{
                         backgroundColor: COLORS.lightGray1
                     }}
+                    onPress={()=>navigation.navigate('Preferences')}
                 />
 
 

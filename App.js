@@ -50,7 +50,8 @@ import {
   MyAccount,
   Settings,
   Notification,
-  ChangePassword
+  ChangePassword,
+  Preferences
 } from './screens'
 
 LogBox.ignoreAllLogs();
@@ -206,6 +207,11 @@ const App = () => {
             <Stack.Screen
               name="Settings"
               component={Settings}
+            />
+
+            <Stack.Screen
+              name="Preferences"
+              component={Preferences}
             />
 
             {/* Notification Navigation */}

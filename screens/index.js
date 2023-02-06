@@ -59,6 +59,7 @@ import MyCoupon from "./Coupon/MyCoupon";
 
 //Settings
 import Settings from "./Settings/Settings";
+import Preferences from "./Settings/Preferences";
 
 export {
     MainLayout,
@@ -99,5 +100,6 @@ export {
     MyOrder,
 
     MyCoupon,
-    Settings
+    Settings,
+    Preferences
 }
